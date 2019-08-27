@@ -6,7 +6,7 @@ SECRET_KEY = 'f41z(gp#mm7ktjo1bfux-n*0!mlti$9d1@k_sws@&kl*@tfi21'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', ]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', ]
 
 DATABASES = {
     'default': {
