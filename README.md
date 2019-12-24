@@ -57,15 +57,15 @@ Install required packages:
 
 Next, perform migration:
 
-`python3 manage.py migrate --settings=src.settings.local`
+`hy manage.hy migrate --settings=src.settings.local`
 
 At this point, one may want to create a superuser account and create some products. One can also use sample data provided in `products/fixtures.json` by running:
 
-`python3 manage.py loaddata products/fixture.json --settings=src.settings.local`
+`hy manage.hy loaddata products/fixture.json --settings=src.settings.local`
 
 The backend is now ready. Run a local server with
 
-`python3 manage.py runserver --settings=src.settings.local`
+`hy manage.hy runserver --settings=src.settings.local`
 
 The backend should be available at `localhost:8000`.
 
