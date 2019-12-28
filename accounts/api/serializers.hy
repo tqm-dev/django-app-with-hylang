@@ -47,10 +47,10 @@
     data)
 
   (defn get_cleaned_data [self]
-    {"first_name" (get self.validated_data "first_name" "")
-     "last_name"  (get self.validated_data "last_name" "")
-     "password1"  (get self.validated_data "password1" "")
-     "email"      (get self.validated_data "email" "")})
+    {"first_name" (get self.validated_data "first_name")
+     "last_name"  (get self.validated_data "last_name")
+     "password1"  (get self.validated_data "password1")
+     "email"      (get self.validated_data "email")})
 
   (defn save [self request]
     (setv adapter (get_adapter))
