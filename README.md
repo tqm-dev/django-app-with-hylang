@@ -1,6 +1,6 @@
 # Django sample application written in Hylang
 
-This project is an implementation of django app using Django REST framework with Hylang. 
+This project is a sample implementation of django app using Django REST framework with Hylang. 
 
 ## How to set up
 
