@@ -36,10 +36,10 @@
   (defn --str-- [self] 
     self.name)
 
-  (with-decorator property 
+  #@(property 
     (defn is_featured [self] self.featured))
 
-  (with-decorator property 
+  #@(property 
     (defn is_available [self]
      (> self.quantity 0))))
 

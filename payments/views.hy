@@ -4,7 +4,7 @@
         [django.views.decorators.http [require_http_methods]])
 
 ; Create your views here.
-(with-decorator (require_http_methods ["POST"]) csrf_exempt
+#@((require_http_methods ["POST"]) csrf_exempt
   (defn charge_view [request]
    (print "charge_view is called")))
 
