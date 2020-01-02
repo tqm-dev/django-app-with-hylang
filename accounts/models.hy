@@ -39,5 +39,5 @@
    REQUIRED_FIELDS ["first_name" "last_name"]
    objects (CustomUserManager)]
 
-  (defn __str__ [self]
+  (defn --str-- [self]
     self.email))

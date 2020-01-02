@@ -9,5 +9,5 @@
     [verbose_name "Subscriber"
      verbose_name_plural "Subscribers"])
 
-  (defn __str__ [self]
+  (defn --str-- [self]
     self.email))

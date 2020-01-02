@@ -13,7 +13,7 @@
   (defclass Meta []
     [verbose_name_plural "Categories"])
 
-  (defn __str__ [self] 
+  (defn --str-- [self] 
     self.name)
 
   (defn get_absolute_url [self]
@@ -33,7 +33,7 @@
   (defclass Meta [] 
     [ordering (, "name")])
 
-  (defn __str__[self] 
+  (defn --str-- [self] 
     self.name)
 
   (with-decorator property 
