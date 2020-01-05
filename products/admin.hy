@@ -1,5 +1,5 @@
-(import [django.contrib [admin]])
-(import [.models [Product Category]])
+(import [django.contrib [admin]]
+        [.models [Product Category]])
 
 (defclass ProductAdmin [admin.ModelAdmin]
   [list_display  (, "name" "price" "quantity" "featured")

@@ -1,5 +1,5 @@
-(import [django.contrib.auth.forms [UserCreationForm UserChangeForm]])
-(import [.models [CustomUser]])
+(import [django.contrib.auth.forms [UserCreationForm UserChangeForm]]
+        [.models [CustomUser]])
 
 (defclass CustomUserCreationForm [UserCreationForm]
   (defclass Meta [UserCreationForm]

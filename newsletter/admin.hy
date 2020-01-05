@@ -1,5 +1,5 @@
-(import [django.contrib [admin]])
-(import [.models [Subscriber]])
+(import [django.contrib [admin]]
+        [.models [Subscriber]])
 
 ; Register your models here.
 (defclass SubscriberAdmin [admin.ModelAdmin]

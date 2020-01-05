@@ -1,7 +1,7 @@
-(import [django.contrib [admin]])
-(import [django.contrib.auth.admin [UserAdmin]])
-(import [.forms [CustomUserCreationForm CustomUserChangeForm]])
-(import [.models [CustomUser]])
+(import [django.contrib [admin]]
+        [django.contrib.auth.admin [UserAdmin]]
+        [.forms [CustomUserCreationForm CustomUserChangeForm]]
+        [.models [CustomUser]])
 
 (defclass CustomUserAdmin [UserAdmin]
   [add_form CustomUserCreationForm

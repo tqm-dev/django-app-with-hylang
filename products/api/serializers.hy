@@ -1,5 +1,5 @@
-(import [rest_framework [serializers]])
-(import [products.models [Product Category]])
+(import [rest_framework [serializers]]
+        [products.models [Product Category]])
 
 (defclass CategorySerializer [serializers.ModelSerializer]
   [id (.IntegerField serializers)]

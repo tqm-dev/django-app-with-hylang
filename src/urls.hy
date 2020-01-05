@@ -13,11 +13,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-(import [django.contrib [admin]]) 
-(import [django.urls [path include]])
-(import [django.conf [settings]])
-(import [django.conf.urls.static [static]])
-(import [django.views.generic.base [TemplateView]])
+(import [django.contrib [admin]]
+        [django.urls [path include]]
+        [django.conf [settings]]
+        [django.conf.urls.static [static]]
+        [django.views.generic.base [TemplateView]])
 
 (setv urlpatterns 
   [(path "" (.as_view TemplateView :template_name "base.html") :name "index")

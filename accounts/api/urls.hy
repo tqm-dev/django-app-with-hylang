@@ -1,5 +1,5 @@
-(import [django.urls [include path]])
-(import [.views [CustomRegisterView]])
+(import [django.urls [include path]]
+        [.views [CustomRegisterView]])
 
 (setv urlpatterns
  [(path "" (include "rest_auth.urls"))

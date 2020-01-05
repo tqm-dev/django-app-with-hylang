@@ -1,8 +1,6 @@
-(import [django.db [models]])
-(import [django.urls [reverse]])
-
-; tags
-(import [taggit.managers [TaggableManager]])
+(import [django.db [models]]
+        [django.urls [reverse]]
+        [taggit.managers [TaggableManager]])
 
 ; Create your models here.
 (defclass Category [models.Model]

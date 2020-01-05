@@ -1,9 +1,8 @@
-(import [rest_auth.views [LoginView]])
-(import [rest_auth.registration.views [RegisterView]])
-(import [.serializers [CustomRegisterSerializer]])
+(import [rest_auth.views [LoginView]]
+        [rest_auth.registration.views [RegisterView]]
+        [.serializers [CustomRegisterSerializer]])
 
-(defclass CustomLoginView [LoginView]
-  )
+(defclass CustomLoginView [LoginView])
 
 (defclass CustomRegisterView [RegisterView]
   [serializer_class CustomRegisterSerializer])

@@ -1,6 +1,6 @@
-(import [django.contrib.auth.base_user [BaseUserManager]])
-(import [django.contrib.auth.models [AbstractUser]])
-(import [django.db [models]])
+(import [django.contrib.auth.base_user [BaseUserManager]]
+        [django.contrib.auth.models [AbstractUser]]
+        [django.db [models]])
 
 (defclass CustomUserManager [BaseUserManager]
   "Custom user model manager with email as the unique identifier"

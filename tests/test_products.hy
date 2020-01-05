@@ -28,8 +28,9 @@
     (.assertTrue self test_product.is_available))
 
   (defn test_product_with_too_long_name [self]
-    (import random string)
-    (import [django.db.utils [DataError]])
+    (import random 
+            string
+            [django.db.utils [DataError]])
     (setv long_name (.join "" (lfor n (range 151) (.choice random string.ascii_lowercase))))
     (with [(.assertRaises self DataError)]
       (.create Product.objects :name long_name :slug "long-name")))

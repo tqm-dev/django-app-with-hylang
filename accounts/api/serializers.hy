@@ -1,6 +1,6 @@
-(import [django.contrib.auth [get_user_model]])
-(import [rest_framework [serializers]])
-(import [rest_auth.serializers [LoginSerializer]])
+(import [django.contrib.auth [get_user_model]]
+        [rest_framework [serializers]]
+        [rest_auth.serializers [LoginSerializer]])
 
 (try
   (import [allauth.utils [email_address_exists]])
