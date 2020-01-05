@@ -14,7 +14,7 @@
 (defclass CustomUserDetailsSerializer [serializers.ModelSerializer]
   (defclass Meta []
     [model  User
-     fields (,"id" "first_name" "last_name" "email")]))
+     fields (, "id" "first_name" "last_name" "email")]))
 
 (defclass CustomLoginSerializer [LoginSerializer]
   [username None

@@ -64,8 +64,8 @@
   CORS_ORIGIN_ALLOW_ALL True
   AUTH_USER_MODEL "accounts.CustomUser" ; authentication related stuff
   AUTHENTICATION_BACKENDS
-    (,"django.contrib.auth.backends.ModelBackend" ; Needed to login by username in Django admin, regardless of `allauth`
-      "allauth.account.auth_backends.AuthenticationBackend"); `allauth` specific authentication methods, such as login by e-mail
+    (, "django.contrib.auth.backends.ModelBackend" ; Needed to login by username in Django admin, regardless of `allauth`
+       "allauth.account.auth_backends.AuthenticationBackend"); `allauth` specific authentication methods, such as login by e-mail
   REST_FRAMEWORK
     {"DEFAULT_PERMISSION_CLASSES" 
         ;"rest_framework.permissions.IsAuthenticated"

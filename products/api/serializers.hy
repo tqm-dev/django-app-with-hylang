@@ -11,5 +11,5 @@
 (defclass ProductSerializer [serializers.ModelSerializer]
   (defclass Meta []
     [model Product
-     fields (,"id" "name" "price" "quantity" "featured" "description" "picture" "slug")
+     fields (, "id" "name" "price" "quantity" "featured" "description" "picture" "slug")
      lookup_field "slug"]))
